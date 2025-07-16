@@ -1,0 +1,26 @@
+{
+  "name": "entrainement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roro06s/Projet-soloTailWind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roro06s/Projet-soloTailWind/issues"
+  },
+  "homepage": "https://github.com/Roro06s/Projet-soloTailWind#readme",
+  "dependencies": {
+    "eslint": "^9.31.0",
+    "htmlhint": "^1.6.3",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
