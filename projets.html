@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de romain Sonigo , création de site web responsive, applications interactives et solutions digitales sur mesure" />
+  <meta name="author" content="romain sonigo" />
+  <meta name="copyright" content="romain sonigo" />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Portfolio</title>
+
+  <!-- Tailwind CDN (ou compilé localement en prod) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-black text-white m-0 relative">
+         <div class="bg-animation"></div>
+ 
+
+  <header class="">
+    <nav id="navbar" class="flex px-12 py-4 bg-black bg-opacity-100 fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80  transition-transform duration-300">
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-white font-bold text-2xl ms-3">
+          Soni'<span class="oe">Ro</span>
+        </a>
+        <a href="index.html" class="logo-link flex items-center transition-transform duration-300 hover:scale-105 ">
+          <img src="images/logo.png" alt="Logo Romain Sonigo" class="logo-img w-20 h-20 rounded-[40%] animate-[logoSpin_20s_linear_infinite]" />
+        </a>
+      </div>
+   <button id="burger-btn" class="block md:hidden text-white focus:outline-none" aria-label="menu burger">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+      
+<div id="navbarNav" class="hidden lg:flex flex-col lg:flex-row absolute top-full left-0 w-full bg-black z-50 lg:static lg:w-auto lg:bg-transparent lg:items-center lg:justify-end flex-1">
+  <ul class="flex flex-col lg:flex-row gap-4 lg:gap-10 p-4 lg:p-0 text-white font-bold">
+
+          <li><a href="index.html" class="gradient-link">Acceuil</a></li>
+          <li><a href="#APropos" class="gradient-link">A Propos</a></li>
+          <li><a href="cv.html" class="gradient-link">CV</a></li>
+          
+         <li class="relative group"><a href="index.html" class="gradient-link">Mes Passions</a>
+          <ul class="absolute left-0 mt-0.5 w-48 text-white bg-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50">
+ <li><a href="Passion1.html" class="block px-4 py-2 hover:bg-gray-800">Passion 1</a></li>
+    <li><a href="passion2.html" class="block px-4 py-2 hover:bg-gray-800">Passion 2</a></li>
+    <li><a href="passion3.html" class="block px-4 py-2 hover:bg-gray-800">Passion 3</a></li>
+
+          </ul>
+          </li>
+          <li><a href="projets.html" class="gradient-link">Projets</a></li>
+          <li><a href="contact.html" class="gradient-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="section-bienvenue" class="min-h-[200px]">
+    <div class="container mx-auto px-4 pt-24">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2">
+          <h1 class="display-3 ms-0 mb-0 apparition bienvenue text-[clamp(3rem,8vw,6rem)] font-normal bg-gradient-to-br from-[#d4af37] to-[#1b2eaf] bg-clip-text text-transparent text-center sm:text-left">
+            <span class="bienvenue-title">Mes Projets.</span>
+          </h1>
+        </div>
+      </div>
+ 
+
+<section class="flex">
+  <div class="w-full px-4">
+    <div class="flex justify-center">
+      <div class="w-full lg:max-w-6xl bg-dark p-5 rounded-2xl shadow-lg text-white mt-16">
+        <h2 class="text-center font-light text-4xl md:mt-4">Mini-jeu interactif.</h2>
+        <br>
+        <div class="flex flex-wrap mt-4 justify-center items-center">
+          <div class="w-full md:w-1/2">
+            <img src="images/mini-jeu.webp" alt="Capture d'écran du mini-jeu" class="w-full rounded shadow mt-5 img-projet">
+          </div>
+          <div class="w-full md:w-1/2 text-white font-light mt-5 md:mt-6 md:mr-4">
+            <p>Ce petit jeu a été l’un de mes premiers projets avec JavaScript. Le but est simple : deviner un nombre entre 1 et 100 en moins de 10 essais. Il m’a permis de découvrir la logique de programmation, les conditions, les boucles, et même d’ajouter une petite animation de feu d’artifice en cas de victoire 🎉.</p>
+            <br><br>
+            <a href="https://dashing-haupia-d9612a.netlify.app/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded mt-5 mb-3">Voir le projet en ligne</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flex">
+  <div class="w-full px-4">
+    <div class="flex justify-center">
+      <div class="w-full lg:max-w-6xl bg-dark p-5 rounded-2xl shadow-lg text-white mt-16">
+        <h2 class="text-center font-light text-4xl md:mt-4">Site e-Commerce.</h2>
+        <br>
+        <div class="flex flex-wrap mt-4 justify-center items-center">
+          <div class="w-full md:w-1/2">
+            <img src="images/e-com2.webp" alt="Capture d'écran du mini-jeu" class="w-full rounded shadow mt-5 img-projet">
+          </div>
+          <div class="w-full md:w-1/2 text-white font-light mt-5 md:mt-6 md:mr-1">
+            <p>Ce site web, encore en développement, est un projet de site e-commerce de ventes de produits de nettoyage pour professionnels et particuliers, mais également un site vitrine présentant mon activité de nettoyage, que j'effectue à mes heures perdues pour augmenter un peu mes revenus (Mettre du beurre dans les pâtes, comme on dit !) 💸.</p>
+            <br><br>
+            <a href="https://mellow-meringue-cd6f13.netlify.app/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded mt-5 mb-3">Voir le projet en ligne</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flex">
+  <div class="w-full px-4">
+    <div class="flex justify-center">
+      <div class="w-full lg:max-w-6xl bg-dark p-5 rounded-2xl shadow-lg text-white mt-16">
+        <h2 class="text-center font-light text-4xl md:mt-4">Portfolio.</h2>
+        <br>
+        <div class="flex flex-wrap mt-4 justify-center items-center">
+          <div class="w-full md:w-1/2">
+            <img src="images/portfolio.webp" alt="Capture d'écran du portfolio" class="w-full rounded shadow mt-5 img-projet">
+          </div>
+          <div class="w-full md:w-1/2 text-white font-light mt-5 md:mt-6 md:mr-1">
+            <p>Ce portfolio a été pour moi, à l'heure actuelle, le projet le plus "complet" que j'ai réalisé. Il m’a permis de regrouper l’ensemble de mes compétences en HTML, CSS, Bootstrap, ainsi que quelques animations personnalisées. Il est responsive, présente mes passions, mes projets et mon parcours. Ce site reflète non seulement mes débuts dans le développement web, mais aussi ma volonté constante de progresser et de créer des projets qui me ressemblent. 💼</p>
+            <br><br>
+            <a href="https://dashing-haupia-d9612a.netlify.app/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded mt-5 mb-3">Voir le projet en ligne</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="container-fluid text-center py-4">
+    <p class="text-white mb-0">© <span id="year"></span> Soni'Ro. Tous droits réservés.</p>
+    <p class="text-white mb-0">Portfolio réalisé avec passion.</p>
+  </footer>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+      // On défile vers le bas → cacher la navbar
+      navbar.classList.add("-translate-y-full");
+    } else if (currentScroll < lastScroll) {
+      // On remonte → afficher la navbar
+      navbar.classList.remove("-translate-y-full");
+    }
+
+    lastScroll = currentScroll;
+  });
+});
+</script>
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const btn = document.getElementById('burger-btn');
+    const menu = document.getElementById('navbarNav');
+if(btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+}
+    });
+  </script>
+  <script>
+    // Toggle mobile menu
+    document.getElementById("btnMenu").addEventListener("click", () => {
+      const m = document.getElementById("menu");
+      m.classList.toggle("hidden");
+    });
+
+    // Année auto
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

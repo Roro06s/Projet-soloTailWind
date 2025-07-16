@@ -1,0 +1,198 @@
+/* style.css */
+
+/* Navbar toggler icon (déjà injecté inline dans head, mais tu peux garder ici aussi) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Animations */
+
+/* Spin infini lent pour le logo */
+@keyframes logoSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.logo-img {
+  animation: logoSpin 20s linear infinite;
+}
+
+
+/* Néon ligne sous le texte */
+@keyframes neon-line {
+  0%, 100% { box-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 20px #d4af37; }
+  50% { box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37; }
+}
+.neon-line {
+  border-bottom: 2px solid #d4af37;
+  animation: neon-line 3s ease-in-out infinite;
+}
+
+.apparition-bas {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 5s ease, transform 5s ease;
+}
+ 
+.apparition-bas.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+
+/* Animation apparition avec transition */
+
+.apparition-transition {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+ 
+.apparition-transition.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gradient texte (utile si tu veux l’appliquer dans CSS, sinon géré par Tailwind) */
+.gradient-text {
+  background: linear-gradient(to bottom right, #d4af37, #1b2eaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Texte néon */
+
+
+/* Scroll smooth (optionnel, Tailwind scroll-smooth fait pareil) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pour les progress bars: transition de la largeur */
+.progress-bar {
+  transition: width 2s ease-in-out;
+}
+
+/* Conteneur des barres de progression arrondi et fond sombre */
+.progress {
+  background-color: #374151; /* gris foncé */
+  border-radius: 9999px; /* full rounded */
+  height: 1.5rem; /* 24px */
+  overflow: hidden;
+}
+
+ 
+.gradient-link {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+ 
+.gradient-link::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, rgb(17, 55, 145), #d4af37);
+    transition: width 0.4s ease;
+}
+ 
+.gradient-link:hover::before{
+    width: 100%
+}
+ 
+ 
+/* Apparition lente sur bienvenue text */
+.bienvenue {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Logo rotation + pulse */
+.logoPulse {
+  animation: logoPulse 2s ease-in-out infinite;
+}
+
+/* Ne pas oublier d'inclure les classes ci-dessus sur tes éléments HTML correspondants */
+
+
+.bg-animation {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+pointer-events: none;
+background: black;
+background-size: 400% 400% ;
+animation: gradientShift 15s ease infinite;
+overflow: hidden;
+}
+ 
+.bg-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.1" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    animation: gridMove 20s linear infinite;
+}
+ 
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+.big {
+  font-size: 2rem;
+  color: white;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  position: static;
+  background: none;
+;}
+
+
+.apparition {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInLeft 2s ease-out forwards;
+}
+@keyframes slideInLeft {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  .oe {
+background: linear-gradient(45deg, rgb(137, 143, 62), #d4af37); /* Dégradé de couleurs */
+-webkit-background-clip: text; /* Coupe le fond selon la forme du texte */
+-webkit-text-fill-color: transparent; /* Rend le texte transparent pour voir le fond à travers */
+background-clip: text; /* Pour les navigateurs compatibles */
+font-weight: bold; /* Optionnel : pour bien ressortir */
+}
+#navbarNav {
+  transition: all 0.3s ease-in-out;
+}
+.navbar-toggler {
+  position: relative !important;
+  z-index: 9999 !important;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-dark { background-color: #212529; }
+.img-projet:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}

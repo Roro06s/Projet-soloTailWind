@@ -1,0 +1,115 @@
+/* Couleurs et dimensions */
+.bg-dark { background-color: #111; }
+.btn-primary {
+  @apply bg-blue-600 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Navbar toggler */
+#btnMenu { border: none; }
+.navbar-toggler-icon { background-color: transparent; }
+
+/* Gradient underline link */
+.gradient-link {
+  position: relative;
+  transition: all .3s ease;
+}
+.gradient-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(45deg, rgb(17,55,145), #d4af37);
+  transition: width .4s ease;
+}
+.gradient-link:hover::before {
+  width: 100%;
+}
+
+/* Logo */
+.logo-img {
+  width: 80px; height: 80px;
+  border-radius: 40%;
+  animation: logoSpin 20s linear infinite;
+}
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: logoPulse 3s infinite ease-in-out;
+  transition: transform .3s ease;
+}
+.logo-link:hover { transform: scale(1.05); }
+
+/* Animations */
+@keyframes logoPulse {
+  0%,100% { opacity:1; }
+  50% { opacity:.7; }
+}
+@keyframes logoSpin {
+  0% { transform:rotate(0); }
+  100% { transform:rotate(360deg); }
+}
+
+/* Titre accueil */
+.bienvenue-title {
+  font-size: clamp(4rem,8vw,6rem);
+  font-weight:400;
+  background: linear-gradient(45deg,#d4af37,#1b2eaf);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+/* Apparition à l'affichage */
+.apparition {
+  opacity:0;
+  transform: translateX(-100px);
+  animation: slideInLeft 2s ease-out forwards;
+}
+@keyframes slideInLeft {
+  to { opacity:1; transform: translateX(0); }
+}
+
+/* Effet sur images projet */
+.img-projet:hover {
+  transform: scale(1.02);
+  transition: transform .3s ease-in-out;
+}
+
+/* Background animé */
+.bg-animation {
+  position: fixed; top:0; left:0;
+  width:100%; height:100%;
+  z-index:-1;
+  pointer-events:none;
+  background:black;
+  background-size:400% 400%;
+  animation: gradientShift 15s ease infinite;
+  overflow:hidden;
+}
+.bg-animation::before {
+  content:"";
+  position:absolute; top:0; left:0;
+  width:100%; height:100%;
+  pointer-events:none;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0L0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.1" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)" /></svg>');
+  animation: gridMove 20s linear infinite;
+}
+@keyframes gradientShift {
+  0% { background-position:0 0; }
+  50% { background-position:100% 100%; }
+  100% { background-position:0 0; }
+}
+@keyframes gridMove {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(-50px,-50px); }
+}
+
+/* Gradient texte Ro */
+.Ro {
+  background: linear-gradient(45deg, rgb(137,143,62), #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}

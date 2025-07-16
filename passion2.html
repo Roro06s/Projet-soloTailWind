@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de romain Sonigo , création de site web responsive, applications interactives et solutions digitales sur mesure" />
+  <meta name="author" content="romain sonigo" />
+  <meta name="copyright" content="romain sonigo" />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Portfolio</title>
+
+  <!-- Tailwind CDN (ou compilé localement en prod) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-black text-white m-0 relative">
+         <div class="bg-animation"></div>
+ 
+
+  <header class="">
+    <nav id="navbar" class="flex px-12 py-3 bg-black bg-opacity-100 fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80  transition-transform duration-300">
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-white font-bold text-2xl ms-3">
+          Soni'<span class="oe">Ro</span>
+        </a>
+        <a href="index.html" class="logo-link flex items-center transition-transform duration-300 hover:scale-105 ">
+          <img src="images/logo.png" alt="Logo Romain Sonigo" class="logo-img w-20 h-20 rounded-[40%] animate-[logoSpin_20s_linear_infinite]" />
+        </a>
+      </div>
+   <button id="burger-btn" class="block md:hidden text-white focus:outline-none" aria-label="menu burger">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+      
+<div id="navbarNav" class="hidden lg:flex flex-col lg:flex-row absolute top-full left-0 w-full bg-black z-50 lg:static lg:w-auto lg:bg-transparent lg:items-center lg:justify-end flex-1">
+  <ul class="flex flex-col lg:flex-row gap-4 lg:gap-10 p-4 lg:p-0 text-white font-bold">
+
+          <li><a href="index.html" class="gradient-link">Acceuil</a></li>
+          <li><a href="#APropos" class="gradient-link">A Propos</a></li>
+          <li><a href="cv.html" class="gradient-link">CV</a></li>
+          
+          <li class="relative group"><a href="index.html" class="gradient-link">Mes Passions</a>
+          <ul class="absolute left-0 mt-0.5 w-48 text-white bg-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50">
+ <li><a href="Passion1.html" class="block px-4 py-2 hover:bg-gray-800">Passion 1</a></li>
+    <li><a href="passion2.html" class="block px-4 py-2 hover:bg-gray-800">Passion 2</a></li>
+    <li><a href="passion3.html" class="block px-4 py-2 hover:bg-gray-800">Passion 3</a></li>
+
+          </ul>
+          </li>
+          <li><a href="projets.html" class="gradient-link">Projets</a></li>
+          <li><a href="contact.html" class="gradient-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="section-bienvenue" class="min-h-[200px]">
+    <div class="container mx-auto px-4 pt-24">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2">
+          <h1 class="display-3 ms-0 mb-0 apparition bienvenue text-[clamp(3rem,8vw,6rem)] font-normal bg-gradient-to-br from-[#d4af37] to-[#1b2eaf] bg-clip-text text-transparent text-center sm:text-left">
+            <span class="bienvenue-title">Mes Passions.</span>
+          </h1>
+        </div>
+      </div>
+      
+      <section class="flew">
+        <div class="w-full px-6">
+          <div class="flex justify-center">
+            <div class="w-full bg-dark lg:max-w-6xl p-5 rounded-2xl shadow-lg text-white mt-16">
+              <h2 class="text-center font-semibold text-4xl md:mt-16">La Musique Urbaine. 🎤 </h2>
+                 <div class="flex flex-col lg:flex-row items-center gap-8 mt-10">
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <img src="images/ff.jpg" alt="fonky family" class="mx-auto lg:mx-0 mt-10 max-w-full h-auto rounded-2xl" style="height: 400px;"/>
+          </div>
+          <br>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <h3 class="apparition text-2xl font-semibold mb-4 md:mt-12">La Musique Urbaine dans ma vie</h3>
+            <p class="text-base font-light leading-relaxed md:mt-6">La Musique Urbaine ---- et plus particulièrement le rap fait partie de ma vie depuis petit. C’est grâce à mon père, mon entourage et les environnements dans lesquels j'ai évolué que j’ai découvert ce style, qui m’a rapidement captivé par son authenticité et sa force d’expression. J’ai grandi en écoutant surtout du rap français et du rap US old school, même si je reste ouvert à toutes les nouveautés du genre.
+
+J’aime l'équilibre entre les paroles et le rythme : pour moi, un bon son, c’est avant tout une bonne combinaison entre le texte et une instru. Que ce soit Jul,Ninho, Le Rat Luciano, Fonky Family, ou Niro, chacun apporte sa touche unique, mais j’écoute aussi beaucoup d’autres artistes, parce que le rap est un univers tellement riche et varié.
+
+Ce qui me touche, c’est la connexion personnelle que je ressens avec certains textes. Le rap m’apporte motivation, apaisement, confiance et inspiration, selon les moments. Je peux l’écouter partout, que ce soit pour me concentrer, me défouler, ou simplement me détendre.
+
+Même si je ne crée pas moi-même de musique, cette passion est très présente dans mon quotidien. J’aimerais un jour, si l’occasion se présente, associer cette passion à d’autres centres d’intérêt. Pour l’instant, je profite pleinement de cette richesse en tant qu’auditeur fidèle.</p>
+          </div>
+                 </div>
+          <div class="flex flex-col lg:flex-row items-center gap-8 mt-20">
+            <div class="lg:w-1/2 mt-10 lg:mt-0 ms-5">
+              <h3 class="text-2xl font-semibold mb-4 md:mt-12">Une passion qui évolue avec moi</h3>
+              <p class="text-base font-light leading-relaxed md:mt-6">Ce que j’aime dans le rap, c’est qu’il évolue sans cesse, tout comme moi. Il y a toujours de nouveaux sons, de nouvelles vibes, de nouvelles histoires. Je découvre des artistes qui viennent d’arriver, mais je reviens aussi souvent aux classiques, aux morceaux que j’écoutais plus jeune. <br><br> C’est une musique qui suit les époques, qui parle de la vie, des rêves, des galères, et qui me parle encore aujourd’hui, différemment selon les moments.
+
+Le rap, c’est un peu comme une bande-son de mon parcours. Certains sons me rappellent des souvenirs précis, des périodes, des émotions. D’autres me motivent à avancer, à garder la tête froide, à croire en mes projets. Et même si je ne suis pas rappeur, je me sens connecté à cet univers. C’est une passion vivante, personnelle, et qui me suivra sûrement encore longtemps.</p>
+
+
+            </div>
+
+         
+          <div class="lg:w-1/2 text-center">
+            <img src="images/jul.jpg" alt="fonky family" class="mx-auto lg:mx-0 mt-10 max-w-full h-auto rounded-2xl mb-1"/>
+          </div>
+<br><br><br>
+          </div>
+
+
+<br><br><br>
+
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+  <footer class="container-fluid text-center py-4">
+    <p class="text-white mb-0">© <span id="year"></span> Soni'Ro. Tous droits réservés.</p>
+    <p class="text-white mb-0">Portfolio réalisé avec passion.</p>
+  </footer>
+       <script>document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+      // On défile vers le bas → cacher la navbar
+      navbar.classList.add("-translate-y-full");
+    } else if (currentScroll < lastScroll) {
+      // On remonte → afficher la navbar
+      navbar.classList.remove("-translate-y-full");
+    }
+
+    lastScroll = currentScroll;
+  });
+});
+</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const btn = document.getElementById('burger-btn');
+    const menu = document.getElementById('navbarNav');
+if(btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+}
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function revealOnScroll() {
+        document.querySelectorAll(".apparition-bas").forEach(function (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 50) {
+            el.classList.add("visible");
+          }
+        });
+      }
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // Pour lancer au chargement
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const observerOptions = {
+        threshold: 0.4, // déclenche quand 40% visible
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".apparition-transition").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  </body>
+</html>

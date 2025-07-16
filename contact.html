@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de romain Sonigo , création de site web responsive, applications interactives et solutions digitales sur mesure" />
+  <meta name="author" content="romain sonigo" />
+  <meta name="copyright" content="romain sonigo" />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Portfolio</title>
+
+  <!-- Tailwind CDN (ou compilé localement en prod) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-black text-white m-0 relative">
+         <div class="bg-animation"></div>
+ 
+
+  <header class="">
+    <nav id="navbar" class="flex px-12 py-3 bg-black bg-opacity-100 fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80  transition-transform duration-300">
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-white font-bold text-2xl ms-3">
+          Soni'<span class="oe">Ro</span>
+        </a>
+        <a href="index.html" class="logo-link flex items-center transition-transform duration-300 hover:scale-105 ">
+          <img src="images/logo.png" alt="Logo Romain Sonigo" class="logo-img w-20 h-20 rounded-[40%] animate-[logoSpin_20s_linear_infinite]" />
+        </a>
+      </div>
+   <button id="burger-btn" class="block md:hidden text-white focus:outline-none" aria-label="menu burger">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+      
+<div id="navbarNav" class="hidden lg:flex flex-col lg:flex-row absolute top-full left-0 w-full bg-black z-50 lg:static lg:w-auto lg:bg-transparent lg:items-center lg:justify-end flex-1">
+  <ul class="flex flex-col lg:flex-row gap-4 lg:gap-10 p-4 lg:p-0 text-white font-bold">
+
+          <li><a href="index.html" class="gradient-link">Acceuil</a></li>
+          <li><a href="#APropos" class="gradient-link">A Propos</a></li>
+          <li><a href="cv.html" class="gradient-link">CV</a></li>
+          
+          <li class="relative group"><a href="index.html" class="gradient-link">Mes Passions</a>
+          <ul class="absolute left-0 mt-0.5 w-48 text-white bg-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50">
+ <li><a href="Passion1.html" class="block px-4 py-2 hover:bg-gray-800">Passion 1</a></li>
+    <li><a href="passion2.html" class="block px-4 py-2 hover:bg-gray-800">Passion 2</a></li>
+    <li><a href="passion3.html" class="block px-4 py-2 hover:bg-gray-800">Passion 3</a></li>
+
+          </ul>
+          </li>
+          <li><a href="projets.html" class="gradient-link">Projets</a></li>
+          <li><a href="index.html" class="gradient-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="section-bienvenue" class="min-h-[200px]">
+    <div class="container mx-auto px-4 pt-24">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2">
+          <h1 class="display-3 ms-0 mb-0 apparition bienvenue text-[clamp(3rem,8vw,6rem)] font-normal bg-gradient-to-br from-[#d4af37] to-[#1b2eaf] bg-clip-text text-transparent text-center sm:text-left">
+            <span class="bienvenue-title">Contact.</span>
+          </h1>
+        </div>
+      </div>
+      </div>
+  </section>
+      <!-- SECTION CONTACT -->
+<section class="py-10  text-white flex items-center justify-center">
+  <div class="w-full max-w-2xl px-6">
+    <div class="bg-dark p-6 rounded-3xl shadow-lg">
+      <form action="https://formsubmit.co/roro.sonigoo@gmail.com" method="POST" rel="noreferrer">
+        <div class="mb-4">
+          <label for="nom" class="block font-semibold mb-2">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required
+            class="w-full px-4 py-2 rounded-md border border-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre adresse email" required
+            class="w-full px-4 py-2 rounded-md border border-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block font-semibold mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required
+            class="w-full px-4 py-2 rounded-md border border-gray-600 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit"
+            class="border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-gray-900 transition duration-300">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</section>
+
+  <footer class="container-fluid text-center py-4">
+    <p class="text-white mb-0">© <span id="year"></span> Soni'Ro. Tous droits réservés.</p>
+    <p class="text-white mb-0">Portfolio réalisé avec passion.</p>
+  </footer>
+   <script>document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+      // On défile vers le bas → cacher la navbar
+      navbar.classList.add("-translate-y-full");
+    } else if (currentScroll < lastScroll) {
+      // On remonte → afficher la navbar
+      navbar.classList.remove("-translate-y-full");
+    }
+
+    lastScroll = currentScroll;
+  });
+});
+</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const btn = document.getElementById('burger-btn');
+    const menu = document.getElementById('navbarNav');
+if(btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+}
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function revealOnScroll() {
+        document.querySelectorAll(".apparition-bas").forEach(function (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 50) {
+            el.classList.add("visible");
+          }
+        });
+      }
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // Pour lancer au chargement
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const observerOptions = {
+        threshold: 0.4, // déclenche quand 40% visible
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".apparition-transition").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  </body>
+</html>

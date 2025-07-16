@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de romain Sonigo , création de site web responsive, applications interactives et solutions digitales sur mesure" />
+  <meta name="author" content="romain sonigo" />
+  <meta name="copyright" content="romain sonigo" />
+  <meta name="robots" content="index, follow" />
+  
+  <title>Portfolio</title>
+
+  <!-- Tailwind CDN (ou compilé localement en prod) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-black text-white m-0 relative">
+         <div class="bg-animation"></div>
+ 
+
+  <header class="">
+    <nav id="navbar" class="flex px-12 py-3 bg-black bg-opacity-100 fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80  transition-transform duration-300">
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-white font-bold text-2xl ms-3">
+          Soni'<span class="oe">Ro</span>
+        </a>
+        <a href="index.html" class="logo-link flex items-center transition-transform duration-300 hover:scale-105 ">
+          <img src="images/logo.png" alt="Logo Romain Sonigo" class="logo-img w-20 h-20 rounded-[40%] animate-[logoSpin_20s_linear_infinite]" />
+        </a>
+      </div>
+   <button id="burger-btn" class="block md:hidden text-white focus:outline-none" aria-label="menu burger">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+      
+<div id="navbarNav" class="hidden lg:flex flex-col lg:flex-row absolute top-full left-0 w-full bg-black z-50 lg:static lg:w-auto lg:bg-transparent lg:items-center lg:justify-end flex-1">
+  <ul class="flex flex-col lg:flex-row gap-4 lg:gap-10 p-4 lg:p-0 text-white font-bold">
+
+          <li><a href="index.html" class="gradient-link">Acceuil</a></li>
+          <li><a href="#APropos" class="gradient-link">A Propos</a></li>
+          <li><a href="cv.html" class="gradient-link">CV</a></li>
+          
+          <li class="relative group"><a href="index.html" class="gradient-link">Mes Passions</a>
+          <ul class="absolute left-0 mt-0.5 w-48 text-white bg-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-50">
+ <li><a href="Passion1.html" class="block px-4 py-2 hover:bg-gray-800">Passion 1</a></li>
+    <li><a href="passion2.html" class="block px-4 py-2 hover:bg-gray-800">Passion 2</a></li>
+    <li><a href="passion3.html" class="block px-4 py-2 hover:bg-gray-800">Passion 3</a></li>
+
+          </ul>
+          </li>
+          <li><a href="projets.html" class="gradient-link">Projets</a></li>
+          <li><a href="contact.html" class="gradient-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="section-bienvenue" class="min-h-[200px]">
+    <div class="container mx-auto px-4 pt-24">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2">
+          <h1 class="display-3 ms-0 mb-0 apparition bienvenue text-[clamp(3rem,8vw,6rem)] font-normal bg-gradient-to-br from-[#d4af37] to-[#1b2eaf] bg-clip-text text-transparent text-center sm:text-left">
+            <span class="bienvenue-title">Mes Passions.</span>
+          </h1>
+        </div>
+      </div>
+      <section class="flex">
+        <div class="w-full px-6">
+            <div class="flex justify-center">
+                <div class="w-full bg-dark lg:max-w-6xl p-5 rounded-2xl shadow-lg text-white mt-16">
+                    <h2 class="text-center font-semibold text-4xl md:mt-16">La Boxe Anglaise 🥊</h2>
+                
+            
+      
+     
+
+      <section class="mt-10 max-w-6xl mx-auto px-6 md:mt-16">
+        <p class="mt-8 text-base leading-relaxed">
+          La boxe anglaise est bien plus qu’un sport pour moi : c’est une discipline complète qui allie force physique, stratégie mentale et maîtrise de soi. Chaque entraînement est une opportunité d’évoluer, de repousser ses limites et d’améliorer sa concentration.
+        </p>
+        <p class="mt-6 text-base leading-relaxed">
+          Ce sport m’a appris la rigueur, la persévérance et le respect de l’adversaire. J’apprécie aussi l’histoire riche de la boxe, les grands champions comme Mayweather ou Mike Tyson, et la beauté du geste technique.
+        </p>
+        <p class="mt-6 text-base leading-relaxed">
+          Que ce soit sur le ring ou dans la vie, la boxe m’aide à garder le contrôle, à me battre pour mes objectifs et à toujours me relever, peu importe les coups reçus.
+        </p>
+
+        <div class="text-center mt-14">
+          <h3 class="text-3xl font-semibold mb-6 md:mt-16"><span class="oe">Mes idoles</span></h3>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-8 mt-10">
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <img src="images/loma2.png" alt="Vasily Lomachenko" class="mx-auto lg:mx-0 mt-10 max-w-full h-auto" />
+          </div>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <h3 class="apparition text-2xl font-semibold mb-4 md:mt-16">Vasily Lomachenko</h3>
+            <p class="text-base font-light leading-relaxed md:mt-10">
+              Pour moi, un des plus grands boxeurs de l’histoire, sous-estimé et pas reconnu à sa juste valeur, c’est Vasyl Lomachenko. Son talent est tout simplement exceptionnel. Avec un palmarès de 20 victoires dont 11 par KO pour seulement 3 défaites, il a marqué le monde de la boxe par sa technique, sa précision chirurgicale, sa vision du ring et surtout… son style unique.
+            
+            
+              Avant même de passer professionnel, Lomachenko avait déjà un palmarès historique en amateur : 396 victoires pour une seule défaite, qu’il a d’ailleurs vengée par la suite. Double champion olympique (2008 à Pékin et 2012 à Londres), il a dominé tous les circuits avant de se lancer chez les pros.
+           
+            
+              Ce qui me fascine chez lui, c’est son intelligence de combat, sa capacité à créer des angles, à esquiver comme personne, et à faire danser ses adversaires. On le surnomme “The Matrix” pour une bonne raison : ses déplacements sont irréels. Il rend le complexe simple et le simple… invisible.
+           
+            
+              Il est aussi l’un des rares boxeurs à avoir remporté un titre mondial dès son 3e combat professionnel, et à avoir été champion dans trois catégories de poids différentes (plume, super-plume et léger) en un temps record.
+            
+            
+              Lomachenko ne fait pas beaucoup de bruit, il ne cherche pas les clashs ni les projecteurs. Mais dans le ring, c’est une véritable œuvre d’art en mouvement, une légende vivante à mes yeux. Peu de boxeurs incarnent autant l'élégance, la discipline et la maîtrise technique que lui.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-8 mt-20">
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <h3 class="apparition text-2xl font-semibold mb-4">Floyd Mayweather</h3>
+            <p class="text-base font-light leading-relaxed">
+              Floyd Mayweather est pour moi l’un des plus grands boxeurs de tous les temps, voire le plus intelligent à avoir jamais mis les gants. Il est souvent critiqué, parfois mal compris, mais on ne peut pas nier l’évidence : il a dominé la boxe pendant plus de deux décennies sans jamais perdre. Un palmarès unique : 50 combats, 50 victoires, dont 27 par KO. Invaincu, propre, chirurgical.
+            
+          
+              Ce que j’admire le plus chez lui, c’est son sens de la défense. Mayweather n’est pas un cogneur spectaculaire comme d’autres, mais c’est un maître absolu de l’art du "hit and not get hit" (toucher sans se faire toucher). Sa garde en coquille, sa lecture du jeu, sa capacité à anticiper chaque mouvement font de lui un véritable tacticien, une machine à frustrer ses adversaires.
+           
+              Mais Floyd, ce n’est pas que de la technique. C’est aussi une légende vivante du business. Il a su gérer sa carrière mieux que quiconque, en devenant son propre promoteur, en contrôlant ses combats, et en créant autour de lui un empire. D'où son surnom "Money" Mayweather. Certains le critiquent pour son arrogance, mais moi je vois un homme qui a compris les règles du jeu et les a tournées à son avantage.
+           
+              Multiple champion du monde dans 5 catégories différentes, il a battu des noms mythiques comme Canelo Alvarez, Manny Pacquiao, Oscar De La Hoya ou encore Shane Mosley. Et il l’a fait à sa manière, en imposant son rythme, en faisant de chaque combat une leçon de boxe.
+          
+              Floyd Mayweather, c’est la perfection stratégique, la rigueur, l’intelligence, et le contrôle absolu. Un boxeur complet, controversé certes, mais indéniablement légendaire.
+            </p>
+          </div>
+          <div class="lg:w-1/2 text-center">
+            <img src="images/mayw.png" alt="Floyd Mayweather" class="max-w-full h-auto mx-auto mt-10 lg:mt-0 img-custom" />
+          </div>
+        </div>
+
+        <div class="text-center mt-20">
+          <h3 class="text-3xl font-semibold mb-8"><span class="oe">Mon expérience</span></h3>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center px-6">
+          <p class="text-base leading-relaxed">
+            Mon parcours dans la boxe a été assez accidenté, mais c’est aussi ce qui le rend unique et personnel. J’ai commencé la boxe anglaise avec beaucoup de motivation et d’envie, et dès ma première année, j’ai eu la chance de disputer deux combats officiels, avec 1 Victoire et 1 Défaite.<br /><br />
+            C’était une expérience incroyable, pleine d’intensité, d’adrénaline, de dépassement de soi.
+          </p>
+          <p class="mt-6 text-base leading-relaxed">
+            Mais très vite, les blessures se sont invitées dans l’aventure. J’ai subi deux blessures sérieuses : une déchirure musculaire et une luxation, chacune à une épaule différente… droite et gauche. Ces blessures ont nécessité une opération et surtout, une longue période de récupération. J’ai été contraint de mettre les gants de côté pendant près de trois ans. Une vraie épreuve, autant physiquement que mentalement.<br /><br />
+            Aujourd’hui, je suis de retour. Je reprends la boxe avec encore plus de passion, de maturité et d’envie qu’avant. Mon objectif est clair : reprendre la compétition petit à petit, retrouver mon niveau et enrichir un peu mon palmarès.
+          </p>
+          <br><br><br>
+        </div>
+        
+            </div>
+        </div>
+        
+      </section>
+    </div>
+  </section>
+
+  <footer class="container-fluid text-center py-4">
+    <p class="text-white mb-0">© <span id="year"></span> Soni'Ro. Tous droits réservés.</p>
+    <p class="text-white mb-0">Portfolio réalisé avec passion.</p>
+  </footer>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  let lastScroll = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+      // On défile vers le bas → cacher la navbar
+      navbar.classList.add("-translate-y-full");
+    } else if (currentScroll < lastScroll) {
+      // On remonte → afficher la navbar
+      navbar.classList.remove("-translate-y-full");
+    }
+
+    lastScroll = currentScroll;
+  });
+});
+</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const btn = document.getElementById('burger-btn');
+    const menu = document.getElementById('navbarNav');
+if(btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+}
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function revealOnScroll() {
+        document.querySelectorAll(".apparition-bas").forEach(function (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 50) {
+            el.classList.add("visible");
+          }
+        });
+      }
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // Pour lancer au chargement
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const observerOptions = {
+        threshold: 0.4, // déclenche quand 40% visible
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".apparition-transition").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
