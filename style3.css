@@ -1,12 +1,16 @@
 /* Couleurs et dimensions */
-.bg-dark { background-color: #111; }
+.bg-dark { 
+  background-color: #111; 
+}
+
 .btn-primary {
   @apply bg-blue-600 text-white font-bold py-2 px-4 rounded;
 }
 
 /* Navbar toggler */
-#btnMenu { border: none; }
-.navbar-toggler-icon { background-color: transparent; }
+#btnMenu {
+   border: none; }
+
 
 /* Gradient underline link */
 .gradient-link {
@@ -29,7 +33,7 @@
 .logo-img {
   width: 80px; height: 80px;
   border-radius: 40%;
-  animation: logoSpin 20s linear infinite;
+  animation: logo-spin 20s linear infinite;
 }
 .logo-link {
   display: flex;
@@ -38,14 +42,17 @@
   animation: logoPulse 3s infinite ease-in-out;
   transition: transform .3s ease;
 }
-.logo-link:hover { transform: scale(1.05); }
+
+.logo-link:hover {
+   transform: scale(1.05); 
+  }
 
 /* Animations */
-@keyframes logoPulse {
+@keyframes logo-pulse {
   0%,100% { opacity:1; }
   50% { opacity:.7; }
 }
-@keyframes logoSpin {
+@keyframes logo-spin {
   0% { transform:rotate(0); }
   100% { transform:rotate(360deg); }
 }

@@ -8,12 +8,12 @@
 /* Animations */
 
 /* Spin infini lent pour le logo */
-@keyframes logoSpin {
+@keyframes logo-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 .logo-img {
-  animation: logoSpin 20s linear infinite;
+  animation: logo-spin 20s linear infinite;
 }
 
 
@@ -112,7 +112,7 @@ html {
 
 /* Logo rotation + pulse */
 .logoPulse {
-  animation: logoPulse 2s ease-in-out infinite;
+  animation: logo-pulse 2s ease-in-out infinite;
 }
 
 /* Ne pas oublier d'inclure les classes ci-dessus sur tes éléments HTML correspondants */
@@ -147,6 +147,7 @@ overflow: hidden;
 
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      background-color: transparent;
     }
 
 .big {
@@ -191,7 +192,11 @@ font-weight: bold; /* Optionnel : pour bien ressortir */
   align-items: center;
   justify-content: center;
 }
-.bg-dark { background-color: #212529; }
+
+.bg-dark { 
+  background-color: #212529; 
+}
+
 .img-projet:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease-in-out;
