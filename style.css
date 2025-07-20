@@ -174,7 +174,8 @@ overflow: hidden;
   }
   
   .oe {
-background: linear-gradient(45deg, rgb(137, 143, 62), #d4af37); /* Dégradé de couleurs */
+background: linear-gradient(45deg, rgb(137 143 62), #d4af37); /* Dégradé de couleurs */
+/* stylelint-disable-next-line property-no-vendor-prefix */
 -webkit-background-clip: text; /* Coupe le fond selon la forme du texte */
 -webkit-text-fill-color: transparent; /* Rend le texte transparent pour voir le fond à travers */
 background-clip: text; /* Pour les navigateurs compatibles */
