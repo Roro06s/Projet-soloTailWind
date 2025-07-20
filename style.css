@@ -3,6 +3,7 @@
 /* Navbar toggler icon (déjà injecté inline dans head, mais tu peux garder ici aussi) */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-color: transparent;
 }
 
 /* Animations */
@@ -12,6 +13,7 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 .logo-img {
   animation: logo-spin 20s linear infinite;
 }
@@ -22,6 +24,7 @@
   0%, 100% { box-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 20px #d4af37; }
   50% { box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37; }
 }
+
 .neon-line {
   border-bottom: 2px solid #d4af37;
   animation: neon-line 3s ease-in-out infinite;
@@ -55,8 +58,7 @@
 /* Gradient texte (utile si tu veux l’appliquer dans CSS, sinon géré par Tailwind) */
 .gradient-text {
   background: linear-gradient(to bottom right, #d4af37, #1b2eaf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 }
 
 /* Texte néon */
@@ -94,7 +96,7 @@ html {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(45deg, rgb(17, 55, 145), #d4af37);
+    background: linear-gradient(45deg, rgb(17 55 145), #d4af37);
     transition: width 0.4s ease;
 }
  
@@ -106,12 +108,11 @@ html {
 /* Apparition lente sur bienvenue text */
 .bienvenue {
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* Logo rotation + pulse */
-.logoPulse {
+
+.logo-pulse {
   animation: logo-pulse 2s ease-in-out infinite;
 }
 
@@ -145,10 +146,7 @@ overflow: hidden;
 }
  
 
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      background-color: transparent;
-    }
+  
 
 .big {
   font-size: 2rem;
@@ -164,12 +162,14 @@ overflow: hidden;
 .apparition {
     opacity: 0;
     transform: translateX(-100px);
-    animation: slideInLeft 2s ease-out forwards;
+    animation: slide-in-left 2s ease-out forwards;
 }
-@keyframes slideInLeft {
+
+@keyframes slide-in-left {
     to{
         opacity: 1;
         transform: translateX(0);
+
     }
   }
   
@@ -180,9 +180,11 @@ background: linear-gradient(45deg, rgb(137, 143, 62), #d4af37); /* Dégradé de 
 background-clip: text; /* Pour les navigateurs compatibles */
 font-weight: bold; /* Optionnel : pour bien ressortir */
 }
-#navbarNav {
+
+#navbar-nav {
   transition: all 0.3s ease-in-out;
 }
+
 .navbar-toggler {
   position: relative !important;
   z-index: 9999 !important;
